@@ -2,4 +2,4 @@
 ## Project
 
 ## Case Study
--   Washing Machine
+-   DTMF Controlled Home Automation System 
