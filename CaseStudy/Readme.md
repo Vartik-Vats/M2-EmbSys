@@ -13,7 +13,7 @@ The main principle of this circuit is to control appliances like light and fan u
 -   Capacitors – C1, C2, C3 and C4
 -   Crystal Oscillator X1
 ## Circuit Diagram
-
+![WhatsApp Image 2022-02-22 at 5 15 17 PM](https://user-images.githubusercontent.com/98877997/155126036-69a7ef1b-03fc-4c0f-b7fb-ed999cce1ca1.jpeg)
 ## Circuit Design of DTMF Controlled Home Appliances:
 -   The decoder IC consists of an inbuilt operational Amplifier. The output of op-amp is given to the pre-filters to separate low and high frequencies. Then it is passed through frequency and code detector circuits, thus 4-bit binary code is latched.
 -   Tone from mobile is sent to op-amp through series of resistor (100 kilo-Ohm) and capacitor (1nf). Pin1 of DTMF IC i.e. non inverting pin is connected to pin4 i.e. Vref. Pin3 is the output of operational amplifier which is feedback to pin2 using 100 kilo-Ohm resistor. 7 and 8 pins are connected to crystal oscillator of frequency 3.579545 MHz. 15th pin is data valid pin it becomes high when DTMF tone is detected else remains low. The process of frequency detection to digitalization of the signal is done by steering circuit consisting of EST, RT/GT, and resistor (10k), capacitor. Pins 11 to 14 produce the decoded output.
@@ -26,3 +26,5 @@ The main principle of this circuit is to control appliances like light and fan u
 ## Limitations of DTMF Controlled Home Appliances
 -   No security. Anyone can control the appliances by calling the mobile connected to module.
 -   Number of appliances is limited as our mobile can generate only 16 tones.
+## High Level Requirement
+## Low Level Requirement
