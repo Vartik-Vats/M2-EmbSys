@@ -1,4 +1,4 @@
-# DTMF Controlled Home Automation System Circuit
+# DTMF Controlled Home Automation System
 ## Introduction
 -   DTMF is acronym for Dual Tone Multi Frequency. So, just think when you make call for customer care, they will ask you to press 1, 2 or any other number. When you press a number from your mobile, one particular action is happening. All this is because of DTMF. When a button is pressed in your mobile keypad, it will generate a tone of two frequencies. These tones are called row and column frequencies.
 -   Generally, row frequencies are low frequencies and column frequencies are high frequencies. These frequencies for DTMF are chosen in such a way that they don’t have harmonic relation with the others, so that they will not produce same tones. The column frequencies are slightly louder than the row frequencies to compensate for the high-frequency roll off of voice audio systems.
