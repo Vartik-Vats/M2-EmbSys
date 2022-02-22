@@ -1,2 +1,5 @@
 # M2-EmbSys
-## Washing Machine
+## Project
+
+## Case Study
+-   Washing Machine
