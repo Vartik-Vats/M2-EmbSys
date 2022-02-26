@@ -6,12 +6,18 @@ The basic principle of working of the temperature sensors is the voltage across 
 ### LM35
 -   LM35 is an integrated analog temperature sensor whose electrical output is proportional to Degree Centigrade. LM35 Sensor does not require any external calibration or trimming to provide typical accuracies. The LM35’s low output impedance, linear output, and precise inherent calibration make interfacing to readout or control circuitry especially easy.
 -   Features of LM35: Calibrated directly in Degree Celsius, 0.5°C accuracy guarantee-able, Suitable for remote applications, Low cost due to wafer-level trimming, Operates from 4 to 30 volts, Less than 60 mA current drain.
--   ATmega16
--   LCD 16*2
--   Reset Switch
--   Resistor- 2
--   Voltage
-## Using LM35 to Calculate the Temperature
+### ATmega16
+-   ATmega16 microcontroller which comes under Atmel’s Advanced Virtual RISC family. It has an advanced RISC (Reduced Instruction Set Computing) system and a high-performance microcontroller. This is the advanced version of the 8051 microcontrollers which has the features beat the 8051 microcontroller features. It’s a computer inbuilt with CPU, RAM, ROM, EEPROM, Timers, Counters, ADC and last four 8 bit ports like port A, port B, port C, port D. Each port has 8 input and output pins for extra performance.
+-   Features of ATmega16: 8-bit microcontroller, Memory, Two 8 bit timer/counter and One 16 bit timer/counter, ATmega16 has Four PWM Channels, Programmable USART, Special Microcontrollers Features, I/O and Packages, Operating Voltage, Power Consumption 
+### LCD 16*2
+
+### Reset Switch
+
+### Resistor
+
+### Voltage
+
+### Using LM35 to Calculate the Temperature
 -   Start by building the circuit. 
 -   In the circuit, ensure you connect GND to the ground, then power LM35 VCC with +5 operating voltage (Vs). 
 -   Thirdly, connect the VOUT to an ADC input (Analog-to-Digital Converter). After which you proceed by sampling the reading from ADC of the output voltage (VOUT). 
