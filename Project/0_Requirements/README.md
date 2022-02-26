@@ -1,5 +1,5 @@
-## Features
-
+## Introduction
+A temperature sensor is a device, usually a thermocouple or a resistance temperature detector, that uses an electrical signal to deliver temperature measurement in a readable form. A thermometer is the most basic type of temperature metre, and it is used to determine how hot or cold something is. In the geotechnical profession, temperature metres are used to monitor concrete, structures, soil, water, bridges, and other structures for structural changes caused by seasonal variations. A thermocouple (T/C) is a device made up of two dissimilar metals that generate an electrical voltage that is proportional to temperature change. An RTD (Resistance Temperature Detector) is a variable resistor that changes its electrical resistance in a precise, repeatable, and almost linear manner in direct proportion to the change in temperature.
 ## Research
 
 ## Circuit Diagram
