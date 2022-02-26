@@ -2,6 +2,8 @@
 
 ## Research
 
+## Circuit Diagram
+![ATmega16 LM35 Interface](https://user-images.githubusercontent.com/98877997/155834375-372f961a-6834-4faa-831c-3699c88823ee.png)
 ## 4W's 1-H
 ## What
 
