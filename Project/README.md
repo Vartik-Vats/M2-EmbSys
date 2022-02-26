@@ -5,9 +5,9 @@
 -   The output analog voltage can be converted to digital form using ADC so that a microcontroller can process it.
 ## Pin Description
 ![LM35 Pinout](https://user-images.githubusercontent.com/98877997/155834037-37e7b047-84a7-40e5-8b96-161c9b48a0bb.png)
-VCC: Supply Voltage (4V – 30V)
-Out: It gives analog output voltage which is proportional to the temperature (in degree Celsius).
-GND: Ground
+-   VCC: Supply Voltage (4V – 30V)
+-   Out: It gives analog output voltage which is proportional to the temperature (in degree Celsius).
+-   GND: Ground
 ## Folder Structure
 |Folder|Description|
 |:-:|:--:|
