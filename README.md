@@ -1,5 +1,5 @@
 # M2-EmbSys
 ## Project
--   Digital Alarm Clock
+-   LM35 Temperature Sensor
 ## Case Study
 -   DTMF Controlled Home Automation System 
