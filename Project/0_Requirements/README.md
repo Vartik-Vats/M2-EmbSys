@@ -6,7 +6,9 @@ The basic principle of working of the temperature sensors is the voltage across 
 -   LM35
 -   ATmega16
 -   LCD 16*2
--   
+-   Reset Switch
+-   Resistor- 2
+-   Voltage
 ## Using LM35 to Calculate the Temperature
 -   Start by building the circuit. 
 -   In the circuit, ensure you connect GND to the ground, then power LM35 VCC with +5 operating voltage (Vs). 
