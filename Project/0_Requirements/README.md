@@ -37,15 +37,15 @@ The basic principle of working of the temperature sensors is the voltage across 
 
 ## High Level Requirement
 |ID|Description|
-|:--:|:--:|:--:|
+|:--:|:--:|
 |HLR01||
 |HLR02||
 |HLR03||
 |HLR04||
 
 ## Low Level Req|uirement
-|ID|Description|Category|
-|:--:|:--:|:--:|
+|ID|Description|
+|:--:|:--:|
 |LLR01||
 |LLR02||
 |LLR03||
