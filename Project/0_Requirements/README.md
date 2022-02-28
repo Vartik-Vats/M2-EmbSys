@@ -37,15 +37,14 @@ The basic principle of working of the temperature sensors is the voltage across 
 ## High Level Requirement
 |ID|Description|
 |:--:|:--:|
-|HLR01||
-|HLR02||
-|HLR03||
-|HLR04||
-
-## Low Level Req|uirement
+|HLR01|Accurate Temperature Detection|
+|HLR02|As the voltage rises, so does the temperature|
+|HLR03|Temperature conversion from output voltage|
+|HLR04|Operates easily|
+## Low Level Requirement
 |ID|Description|
 |:--:|:--:|
-|LLR01||
-|LLR02||
-|LLR03||
-|LLR04||
+|LLR01|LM35 function properly|
+|LLR02| Microcontroller operation and connections|
+|LLR03|Supplied voltage to the circuit|
+|LLR04|LCD display result|
