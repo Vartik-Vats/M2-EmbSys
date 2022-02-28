@@ -30,11 +30,10 @@ The basic principle of working of the temperature sensors is the voltage across 
 ## SWOT Analysis
 |Strength|Weakness|Opportunities|Threats|
 |:--:|:--:|:--:|:--:|
-|Easy to use|Sensors sometime not work properly|High sale|Sometimes there is problem in machine|
-|Reliable|High Voltage then it short circuit|Affordable for everyone||
-|Low cost|Not rough tough|Everyone use it||
-|Easily handle|No Long Life|Every project need to maintain temp.||
-
+|Easy to use|Sensors sometime not work properly|High sale|Sometimes there is a problem with the machine|
+|Reliable|High Voltage then short circuit|Affordable to all|Competitive market|
+|Low cost|Not rough and tough|Everyone uses it|Lack of knowledge|
+|Easy to handle|No Long Life|Every project must maintain temperature|Least sensitivity|
 ## High Level Requirement
 |ID|Description|
 |:--:|:--:|
