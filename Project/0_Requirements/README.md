@@ -27,6 +27,18 @@ The basic principle of working of the temperature sensors is the voltage across 
 ## Circuit Diagram
 ![ATmega16 LM35 Interface](https://user-images.githubusercontent.com/98877997/155834375-372f961a-6834-4faa-831c-3699c88823ee.png)
 ## 4W's 1-H
+### What
+A temperature sensor metre allows users to view the temperature.
+### Where
+This temperature metre can be used to determine the degree of hotness and coolness of structures, soil, water, and bridges.
+### Who
+This temperature metre is used by everyone.
+### When
+If the user is working on an industrial project, they will need this temperature metre to detect the temperature of the soil, water, or environment.
+### Why
+If a user is working on a project and the temperature is too high, it may interfere with their work, so they must determine the temperature.
+### How
+The user can reset the metre and use it to find the temperature again by simply pressing the reset button.
 ## SWOT Analysis
 |Strength|Weakness|Opportunities|Threats|
 |:--:|:--:|:--:|:--:|
