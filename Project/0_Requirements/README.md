@@ -14,11 +14,11 @@ The basic principle of working of the temperature sensors is the voltage across 
 -   An electronic device that is used to display data and the message is known as LCD 16×2. As the name suggests, it includes 16 Columns & 2 Rows so it can display 32 characters (16×2=32) in total & every character will be made with 5×8 (40) Pixel Dots.
 -   Specifications of LCD 16X2: operating voltage of this display ranges from 4.7V to 5.3V, operating current is 1mA without a backlight, HD47780 controller, works in 4-bit and 8-bit modes
 ### Reset Switch
--  
+-   The reset button allows devices that utilize it, such as a computer or peripheral to be rebooted.
 ### Resistor
-
+-   The main purpose of resistor is to reduce the current flow and to lower the voltage in any particular portion of the circuit.
 ### Voltage
-
+-   Voltage is the pressure from an electrical circuit's power source that pushes charged electrons (current) through a conducting loop, enabling them to do work such as illuminating a light.
 ### Using LM35 to Calculate the Temperature
 -   Start by building the circuit. 
 -   In the circuit, ensure you connect GND to the ground, then power LM35 VCC with +5 operating voltage (Vs). 
@@ -27,8 +27,6 @@ The basic principle of working of the temperature sensors is the voltage across 
 ## Circuit Diagram
 ![ATmega16 LM35 Interface](https://user-images.githubusercontent.com/98877997/155834375-372f961a-6834-4faa-831c-3699c88823ee.png)
 ## 4W's 1-H
-|What|Where|Who|When|Why|How|
-
 ## SWOT Analysis
 |Strength|Weakness|Opportunities|Threats|
 |:--:|:--:|:--:|:--:|
