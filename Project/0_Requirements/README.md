@@ -10,11 +10,11 @@ The basic principle of working of the temperature sensors is the voltage across 
 -   ATmega16 microcontroller which comes under Atmel’s Advanced Virtual RISC family. It has an advanced RISC (Reduced Instruction Set Computing) system and a high-performance microcontroller. This is the advanced version of the 8051 microcontrollers which has the features beat the 8051 microcontroller features. It’s a computer inbuilt with CPU, RAM, ROM, EEPROM, Timers, Counters, ADC and last four 8 bit ports like port A, port B, port C, port D. Each port has 8 input and output pins for extra performance.
 -   Features of ATmega16: 8-bit microcontroller, Memory, Two 8 bit timer/counter and One 16 bit timer/counter, ATmega16 has Four PWM Channels, Programmable USART, Special Microcontrollers Features, I/O and Packages, Operating Voltage, Power Consumption.
 -   [PIN Diagram](https://user-images.githubusercontent.com/98877997/155838794-f4a17a6f-b8de-4350-853c-3708c8c45e5f.jpg)
-
 ### LCD 16*2
-
+-   An electronic device that is used to display data and the message is known as LCD 16×2. As the name suggests, it includes 16 Columns & 2 Rows so it can display 32 characters (16×2=32) in total & every character will be made with 5×8 (40) Pixel Dots.
+-   Specifications of LCD 16X2: operating voltage of this display ranges from 4.7V to 5.3V, operating current is 1mA without a backlight, HD47780 controller, works in 4-bit and 8-bit modes
 ### Reset Switch
-
+-  
 ### Resistor
 
 ### Voltage
