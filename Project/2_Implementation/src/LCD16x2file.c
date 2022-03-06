@@ -1,9 +1,4 @@
-#ifndef __AVR_ATmega16__	
-#define __AVR_ATmega16__
-#endif							
 #include "LCD16x2file.h"						/* Include LCD header file */
-
-
 void LCD_Command (char cmd)							/* LCD command write function */
 {
 	LCD_Data_Port = cmd;							/* Write command data to LCD data port */

@@ -1,9 +1,23 @@
+/**
+ * @file LCD16x2file.h
+ * @author Vartik Vats
+ * @brief LM35 Temperature sensor
+ * @version 0.1
+ * @date 2022-03-06
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #ifndef LCD_16x2_H_H_					/* Define library H file if not defined */
 #define LCD_16x2_H_H_
 
+#ifndef __AVR_ATmega16__	
+#define __AVR_ATmega16__
+#endif	
+
 #define F_CPU 8000000UL					/* Define CPU Frequency*/
 #include <avr/io.h>						/* Include AVR std. library file */
-#include <util/delay.h>					/* Include Delay header file */
+#include <util/delay.h>	
 
 #define LCD_Data_Dir DDRB				/* Define LCD data port direction */
 #define LCD_Command_Dir DDRC			/* Define LCD command port direction register */
