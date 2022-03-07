@@ -35,10 +35,10 @@ In the winter, heating the seat can make cars much more comfortable. Heating sys
 ## SWOT Analysis
 |Strength|Weakness|Opportunities|Threats|
 |:--:|:--:|:--:|:--:|
-|Seat that can be easily heated|High investment|Increased market growth|High electrical resistance|
-|Very comfortable for the elderly|Use very protective|Automatic Heating|Over heating|
+|Seat can be easily heated|High investment|Increased market growth|High electrical resistance|
+|Very comfortable for the old persons|Use very protective|Automatic Heating|Over heating|
 |Not wait for warm the car|Heavy use harmfull for body|Grow demand|Produces EMF radiation|
-|Usefull for winter drive|Can not wash the seats|Capability|Third degree burns condition|
+|Useful for winter drive|Can not wash the seats|Capability|Third degree burns condition|
 ## High Level Requirement
 |ID|Description|
 |:--:|:--:|
