@@ -1,46 +1,28 @@
-#ifndef __AVR_ATmega16__	
-#define __AVR_ATmega16__
-#endif							
-#define F_CPU 8000000UL
-#include <avr/io.h>
-#include <util/delay.h>
-#include <string.h>
-#include <stdio.h>
-#include "LCD16x2file.h"
+#include "case1.h"
+#include "case2.h"
+#include "case3.h"
+#include "case4.h"
 
-#define degree_sysmbol 0xdf
-
-void ADC_Init(){										
-	DDRA = 0x00;							        /* Make ADC port as input */
-	ADCSRA = 0x87;									/* Enable ADC, with freq/128  */
-	ADMUX = 0x40;									/* Vref: Avcc, ADC channel: 0 */
-}
-int ADC_Read(char channel)							
+int main(void)
 {
-	ADMUX = 0x40 | (channel & 0x07);				/* set input channel to read */
-	ADCSRA |= (1<<ADSC);							/* Start ADC conversion */
-	while (!(ADCSRA & (1<<ADIF)));					/* Wait until end of conversion by polling ADC interrupt flag */
-	ADCSRA |= (1<<ADIF);							/* Clear interrupt flag */
-	_delay_ms(1);									/* Wait a little bit */
-	return ADCW;									/* Return ADC word */
-}
-int main()
-{
-	char Temperature[10];
-	float celsius;
+    uint16_t temp;
+    
+    while(1)
+    {
+        if(case1_LED()==1) //Check if both the switches are pressed
+        {
+           
+            TurnLED_ON();//Turn LED ON
+            temp=case2_GetADC(); //Get the ADC value
+            case3_PWM(temp); //PWM output based on temperature
+		    case4_USARTWrite(temp); //To Serial monitor to print Temperature
+        }
+        else  //in all other cases
+        {
+            TurnLED_OFF();//Turn LED OFF
+		    _delay_ms(200);
+        }
 
-	LCD_Init();                 /* initialize 16x2 LCD*/
-	ADC_Init();                 /* initialize ADC*/
-	
-	while(1)
-	{
-		LCD_String_xy(1,0,"Temperature");
-		celsius = (ADC_Read(0)*4.88);
-		celsius = (celsius/10.00);
-		sprintf(Temperature,"%d%cC  ", (int)celsius, degree_sysmbol);               /* convert integer value to ASCII string */
-		LCD_String_xy(2,0,Temperature);                /* send string data for printing */
-		_delay_ms(1000);
-		memset(Temperature,0,10);
-	}
-	return 0;
+    }
+    return 0;
 }
