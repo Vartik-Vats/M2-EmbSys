@@ -1,13 +1,8 @@
-# LM35 Temperature Sensor
+# Seat Heating System
 ## Introduction
--   LM35 is a temperature sensor that can measure temperature in the range of -55°C to 150°C.
--   It is a 3-terminal device that provides an analog voltage proportional to the temperature. The higher the temperature, the higher is the output voltage.
--   The output analog voltage can be converted to digital form using ADC so that a microcontroller can process it.
-## Pin Description
-![LM35 Pinout](https://user-images.githubusercontent.com/98877997/155834037-37e7b047-84a7-40e5-8b96-161c9b48a0bb.png)
--   VCC: Supply Voltage (4V – 30V)
--   Out: It gives analog output voltage which is proportional to the temperature (in degree Celsius).
--   GND: Ground
+Heating method is generally used to regulate the temperature. The system has the option to turn on the heater. The temperature sensor continues to monitor the temperature and transmits the analogue value to the microcontroller. Through serial communication, the microcontroller processes the temperature sensor's analogue input and outputs a temperature value. The control system's activities are carried out entirely on a microcontroller known as the Atmega328. The heat control system's functionality is coded in embedded C, and the work is demonstrated using simulation in SimulIDE software.
+## Abstract
+
 ## Folder Structure
 |Folder|Description|
 |:-:|:--:|
@@ -16,7 +11,7 @@
 |2_Implementation|All code and documentation|
 |3_TestPlanAndOutput|Documents with test plans and procedures|
 |4_Report|Attach Report with all the scope of work|
-|5_ImagesAndVideos|All images related to the programming|
+|5_ImagesAndVideos|All images related to the project|
 ## References
 |S.No.|Links|
 |:-:|:--:|
@@ -24,3 +19,4 @@
 |2|[]()|
 |3|[]()|
 |4|[]()|
+### This is not my code, I am taking help from google to make this project
