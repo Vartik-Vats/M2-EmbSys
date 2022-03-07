@@ -1,62 +1,55 @@
 ## Introduction
-A temperature sensor is a device, usually a thermocouple or a resistance temperature detector, that uses an electrical signal to deliver temperature measurement in a readable form. A thermometer is the most basic type of temperature metre, and it is used to determine how hot or cold something is. In the geotechnical profession, temperature metres are used to monitor concrete, structures, soil, water, bridges, and other structures for structural changes caused by seasonal variations. A thermocouple (T/C) is a device made up of two dissimilar metals that generate an electrical voltage that is proportional to temperature change. An RTD (Resistance Temperature Detector) is a variable resistor that changes its electrical resistance in a precise, repeatable, and almost linear manner in direct proportion to the change in temperature.
-## Working of Temperature Sensor
-The basic principle of working of the temperature sensors is the voltage across the diode terminals. If the voltage increases, the temperature also rises, followed by a voltage drop between the transistor terminals of base and emitter in a diode.
+Heating method is generally used to regulate the temperature. The system has the option to turn on the heater. The temperature sensor continues to monitor the temperature and transmits the analogue value to the microcontroller. Through serial communication, the microcontroller processes the temperature sensor's analogue input and outputs a temperature value. The control system's activities are carried out entirely on a microcontroller known as the Atmega328. The heat control system's functionality is coded in embedded C, and the work is demonstrated using simulation in SimulIDE software.
+## Research
+-   Car seat heating was first commercialised in Sweden about fifteen years ago. Seat heaters are now standard equipment or options on Saab, Volvo, Jaguar, BMW, Opel, and Mercedes vehicles, with acceptance and customer demand spreading throughout European markets. In Sweden, all passenger cars sold in the country must include electrical seat heating systems as standard equipment.
+-   Seat heating system design is more complicated and sophisticated than one might think. Seat heating systems today are far more advanced than simple heating components like those found in household heating blankets and cushions.
+-  A high level of human engineering goes into a properly designed seat heating system, which only supplies heat loss experienced by a person's body and only at the major contact points in the seat cushion.
 ## Components Required
-### LM35
--   LM35 is an integrated analog temperature sensor whose electrical output is proportional to Degree Centigrade. LM35 Sensor does not require any external calibration or trimming to provide typical accuracies. The LM35’s low output impedance, linear output, and precise inherent calibration make interfacing to readout or control circuitry especially easy.
--   Features of LM35: Calibrated directly in Degree Celsius, 0.5°C accuracy guarantee-able, Suitable for remote applications, Low cost due to wafer-level trimming, Operates from 4 to 30 volts, Less than 60 mA current drain.
-### ATmega16
--   ATmega16 microcontroller which comes under Atmel’s Advanced Virtual RISC family. It has an advanced RISC (Reduced Instruction Set Computing) system and a high-performance microcontroller. This is the advanced version of the 8051 microcontrollers which has the features beat the 8051 microcontroller features. It’s a computer inbuilt with CPU, RAM, ROM, EEPROM, Timers, Counters, ADC and last four 8 bit ports like port A, port B, port C, port D. Each port has 8 input and output pins for extra performance.
--   Features of ATmega16: 8-bit microcontroller, Memory, Two 8 bit timer/counter and One 16 bit timer/counter, ATmega16 has Four PWM Channels, Programmable USART, Special Microcontrollers Features, I/O and Packages, Operating Voltage, Power Consumption.
--   [PIN Diagram](https://user-images.githubusercontent.com/98877997/155838794-f4a17a6f-b8de-4350-853c-3708c8c45e5f.jpg)
-### LCD 16*2
--   An electronic device that is used to display data and the message is known as LCD 16×2. As the name suggests, it includes 16 Columns & 2 Rows so it can display 32 characters (16×2=32) in total & every character will be made with 5×8 (40) Pixel Dots.
--   Specifications of LCD 16X2: operating voltage of this display ranges from 4.7V to 5.3V, operating current is 1mA without a backlight, HD47780 controller, works in 4-bit and 8-bit modes
-### Reset Switch
--   The reset button allows devices that utilize it, such as a computer or peripheral to be rebooted.
-### Resistor
--   The main purpose of resistor is to reduce the current flow and to lower the voltage in any particular portion of the circuit.
-### Voltage
--   Voltage is the pressure from an electrical circuit's power source that pushes charged electrons (current) through a conducting loop, enabling them to do work such as illuminating a light.
-### Using LM35 to Calculate the Temperature
--   Start by building the circuit. 
--   In the circuit, ensure you connect GND to the ground, then power LM35 VCC with +5 operating voltage (Vs). 
--   Thirdly, connect the VOUT to an ADC input (Analog-to-Digital Converter). After which you proceed by sampling the reading from ADC of the output voltage (VOUT). 
--   Finally, finish by converting the output voltage to temperature.   
-## Circuit Diagram
-![ATmega16 LM35 Interface](https://user-images.githubusercontent.com/98877997/155834375-372f961a-6834-4faa-831c-3699c88823ee.png)
+### ATmega328
+-   The ATmega328 is a single-chip microcontroller produced by Atmel and a member of the megaAVR series. It is based on the 8-bit Atmel AVR processor, which is complemented by flash memory and various peripherals. After programming, the controllers can work on their own, using power and clock speed quartz crystal.
+-   [Atmega328 PIN Diagram](https://user-images.githubusercontent.com/98877997/157062921-6d20c6dc-cb50-4b29-980f-2341730079fc.png)
+### Temperature Sensor
+-   The measurement of the temperature sensor is about the coolness or hotness of an entity. The working of the sensor is the voltage that is read across the diode. If there is an increment in voltage, then the temperature increases and there is a voltage decrement between the transistor terminals of the emitter and the base. That data is saved by the sensor.
+-   If the difference in voltage is amplified, then an analog signal is generated by the device, and it is directly proportional to the temperature.
+### Thermostat
+-   A thermostat is a regulating device component which senses the temperature of a physical system and performs actions so that the system's temperature is maintained near a desired setpoint.
+-   A thermostat exerts control by switching heating or cooling devices on or off, or by regulating the flow of a heat transfer fluid as needed, to maintain the correct temperature. A thermostat can often be the main control unit for a heating or cooling system, in applications ranging from ambient air control to automotive coolant control. Thermostats are used in any device or system that heats or cools to a setpoint temperature.
+### Heater core
+-   A heater core is a radiator-like device used to heat a vehicle's cabin. Hot coolant from the vehicle's engine is routed through the core's winding tube, which acts as a heat exchanger between the coolant and the cabin air. Fins attached to the core tubes increase the surface area for heat transfer to air forced past them by a fan, thus heating the passenger compartment.
+### LCD (liquid crystal display)
+-   Liquid Crystal Display (LCD) is an electronic device, which is frequently used in many applications for displaying the information in a text or image format.
+### LED (Light-emitting diode)
+-   The lighting emitting diode is a p-n junction diode. It is a specially doped diode and made up of a special type of semiconductors. When the light emits in the forward biased, then it is called a light-emitting diode.
 ## 4W's 1-H
 ### What
-A temperature sensor metre allows users to view the temperature.
+In the winter, heating the seat can make cars much more comfortable. Heating system that raises the surface temperature of the automated seat to the comfort of the occupants.
 ### Where
-This temperature metre can be used to determine the degree of hotness and coolness of structures, soil, water, and bridges.
-### Who
-This temperature metre is used by everyone.
+-   In the winter, a heated seat is extremely useful. If you are an early riser, you may find the early morning commute to work unbelievably cold and uncomfortable, especially if you have to sit in a cold driver's seat.
 ### When
-If the user is working on an industrial project, they will need this temperature metre to detect the temperature of the soil, water, or environment.
+-   All heated car seat covers have some form of temperature-control mechanism to allow car users to set a high or low-temperature setting, and when there’s no need to heat up the seats, the heat can be turned off.
 ### Why
-If a user is working on a project and the temperature is too high, it may interfere with their work, so they must determine the temperature.
+-   It is ideal for older drivers or those who live in cold climates because it heats the seat and makes it more comfortable for both the driver and the passenger.
 ### How
-The user can reset the metre and use it to find the temperature again by simply pressing the reset button.
+-   While heated seats are no longer considered a luxury item, many vehicles still come standard with non-heated seats.
+-   People who want to convert their regular car seats into heated seats can do so by using heated car seat covers.
 ## SWOT Analysis
 |Strength|Weakness|Opportunities|Threats|
 |:--:|:--:|:--:|:--:|
-|Easy to use|Sensors sometime not work properly|High sale|Sometimes there is a problem with the machine|
-|Reliable|High Voltage then short circuit|Affordable to all|Competitive market|
-|Low cost|Not rough and tough|Everyone uses it|Lack of knowledge|
-|Easy to handle|No Long Life|Every project must maintain temperature|Least sensitivity|
+|Seat can be easily heated|High investment|Increased market growth|High electrical resistance|
+|Very comfortable for the old persons|Use very protective|Automatic Heating|Over heating|
+|Not wait for warm the car|Heavy use harmfull for body|Grow demand|Produces EMF radiation|
+|Useful for winter drive|Can not wash the seats|Capability|Third degree burns condition|
 ## High Level Requirement
 |ID|Description|
 |:--:|:--:|
-|HLR01|Accurate Temperature Detection|
-|HLR02|As the voltage rises, so does the temperature|
-|HLR03|Temperature conversion from output voltage|
-|HLR04|Operates easily|
+|HLR01|Check when the person is sit on the seat heater will automatically start|
+|HLR02|Check temperature sensor is work properly|
+|HLR03|Check the temperature value|
+|HLR04|Check seat heating is work proper or not|
 ## Low Level Requirement
 |ID|Description|
 |:--:|:--:|
-|LLR01|LM35 function properly|
-|LLR02| Microcontroller operation and connections|
-|LLR03|Supplied voltage to the circuit|
-|LLR04|LCD display result|
+|LLR01|Check coolant level is running low|
+|LLR02|Check the power supply|
+|LLR03|Check it display the temperature|
+|LLR04|Check it run in all system|
