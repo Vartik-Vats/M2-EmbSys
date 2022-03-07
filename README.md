@@ -2,4 +2,4 @@
 ## Case Study
 -   DTMF Controlled Home Automation System 
 ## Project
--   Heating Seat System
+-   Seat Heating System
