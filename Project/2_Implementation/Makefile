@@ -8,6 +8,8 @@ src/case2.c\
 src/case3.c\
 src/case4.c\
 
+TEST_SRC= Unity/unity.c\
+
 OBJCOPY = avr-objcopy.exe
 
 AVRDUDE := avrdude
@@ -46,6 +48,11 @@ hex: $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
 $(BUILD_DIR):
 	# Create directory to store the built files
 	mkdir $(BUILD_DIR)
+
+build_test : 
+	gcc $(TEST_SRC) -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm	
+run_test : build_test
+	./$(call FixPath,$(PROJ_NAME).$(EXEC))
 
 analysis: $(SRC)
 	#Analyse the code using Cppcheck command line utility
