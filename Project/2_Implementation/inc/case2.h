@@ -1,3 +1,13 @@
+/**
+ * @file case2.h
+ * @author 
+ * @brief 
+ * @version 0.1
+ * @date 2022-03-08
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #ifndef __CASE_2_H__
 #define __CASE_2_H__
 
@@ -17,7 +27,6 @@ void InitADC();
 /**
  * @brief Gives the ADC values for the selected channel
  * 
- * @param[in] ch Channel number from 0-7
  * @return uint16_t ADC value
  */
 uint16_t ReadADC(uint8_t ch);

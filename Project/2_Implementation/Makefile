@@ -1,39 +1,28 @@
 PROJ_NAME = HeatingSeat
 
-BUILD_DIR = Build
+BUILD_DIR = File
 
-# All Source code files
 SRC = src/main.c\
 src/case1.c\
 src/case2.c\
 src/case3.c\
 src/case4.c\
 
-#Object copy to create hexfile
 OBJCOPY = avr-objcopy.exe
 
-#Avrdude
 AVRDUDE := avrdude
 
-#Options for HEX file generation
 HFLAGS = -j .text -j .data -O ihex
 
-# All header file paths
 INC = -I inc
 
-# Find out the OS and configure the variables accordingly
-ifdef OS	# All configurations for Windwos OS
-   # Delete command 
+ifdef OS	
    RM = del /q
-   # Correct the path based on OS
    FixPath = $(subst /,\,$1)
-   # Name of the compiler used
    CC = avr-gcc.exe
-   # Name of the elf to hex file converter used
    AVR_OBJ_CPY = avr-objcopy.exe
-else #All configurations for Linux OS
+else 
    ifeq ($(shell uname), Linux)
-   	  # Delete command
       RM = rm -rf				
 	  # Correct the path based on OS
       FixPath = $1				
@@ -44,7 +33,6 @@ else #All configurations for Linux OS
    endif
 endif
 
-# Command to make to consider these names as targets and not as file names in folder
 .PHONY:all analysis clean doc
 
 all:$(BUILD_DIR)

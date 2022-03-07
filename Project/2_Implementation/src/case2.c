@@ -1,3 +1,13 @@
+/**
+ * @file case2.c
+ * @author Vartik Vats
+ * @brief 
+ * @version 0.1
+ * @date 2022-03-08
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #include "case2.h"
 
 void InitADC()

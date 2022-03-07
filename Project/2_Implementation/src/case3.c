@@ -1,3 +1,13 @@
+/**
+ * @file case3.c
+ * @author Vartik Vats
+ * @brief 
+ * @version 0.1
+ * @date 2022-03-08
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #include "case3.h"
 #include "case2.h"
 
@@ -31,5 +41,4 @@ void case3_PWM(uint16_t temp)
             OCR1A=0;
             _delay_ms(200);
         }
-
 }
