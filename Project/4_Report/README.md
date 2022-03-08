@@ -60,3 +60,11 @@ In the winter, heating the seat can make cars much more comfortable. Heating sys
 |LLR02|Check the power supply|
 |LLR03|Check it display the temperature|
 |LLR04|Check it run in all system|
+## Example
+### Ventilated seats work
+-   Cooled and ventilated seats both help you stay cool, according to Chevrolet, although ventilated seats don't use cold air. Inside the seat cushion and backrest of ventilated seats are small fans and ducts. Some systems draw air into the seat, while others use fans to blow air away from the occupant. Small perforations in the fabric allow air to travel through the seat.
+-   You may turn on and off the option for chilled or ventilated seats, as well as modify the air force. If the outside temperature is hot, some Chevrolet vehicles include a feature that turns on the ventilated seats when the remote start is used. The ventilated seats turn off whenever the car is turned on. Other Chevrolet vehicles can be set to auto mode, which turns on the ventilated seats when the interior temperature reaches a temperature the driver specifies.
+-   [YouTube Video](https://www.youtube.com/watch?v=5XDuvbyIfWs)
+## Conclusion
+-   This invention relates to a heated seat for autos, specifically a heated car seat for passenger vehicles. Synthetic materials are widely used in the upholstery of car seats by automobile makers. In cold climates, such fabrics feel quite cold, especially when the car is parked outside for long periods of time during the winter. In addition, the owner covers the automotive seats with a plastic seat cover to protect the fabric. The passenger's discomfort is exacerbated by the plastic covering. The heated seats that have been offered so far have used a lot of electricity. This is a significant drawback because autos have a limited source of such energy.
+-   Heating seats are quite comfortable for persons who live in colder climates and assist the driver and passenger in enjoying the winter ride. The heating system is also advantageous to the elderly because it promotes physical comfort during long rides.
